@@ -1,0 +1,67 @@
+@import "colorScheme.css";
+
+body {
+    box-sizing: border-box;
+}
+
+input {
+    border-radius: 16px;
+}
+
+.inputClass {
+    max-height: 100px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 350px 0;
+}
+
+.firstInput {
+    min-width: 500px;
+    text-align: center;
+}
+
+.list-chek input {
+    min-width: 16px;
+    min-height: 16px;
+
+}
+
+.todos-wrapper {
+    box-sizing: border-box;
+}
+
+.todo-item {
+    min-width: 200px;
+    max-height: 100px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: var(--gray-300);
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-delete {
+    border-radius: 8px;
+}
+
+.todo-item.checked {
+    background-color: var(--gray-700);
+    opacity: 0.5;
+}
+
+.todo-item.delition {
+    animation: opacity 1s ease-in-out;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
